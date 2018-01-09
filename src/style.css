@@ -1,0 +1,88 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif; }
+
+body {
+  background-color: #eee; }
+  
+
+/* -------------------------------------- */
+/* GENERAL STYLES */
+/* -------------------------------------- */
+main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #2A2A2B; }
+
+/* -------------------------------------- */
+/* GAME */
+/* -------------------------------------- */
+#field {
+  background-color: #5f9ea0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1; }
+  #field .snake-head {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../snake1.png");
+    position: absolute;
+   
+   
+    background-color:#4682b4;
+    z-index: 1; }
+  #field .snake-tail {
+    width: 2rem;
+    height: 2rem;
+    background-color: #1976D2;
+    position: absolute;
+ 
+ 
+    background-color: #fff; }
+  #field .food {
+    width: 2rem;
+    height: 2rem;
+    background-color: #1976D2;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #E91E63; }
+
+#infoAlert {
+  width: 8rem;
+  height: auto;
+  top: 36%;
+  left: calc(50% - 5rem);
+  background-color: #d3d3d3;
+  z-index: 10;
+  position: absolute;
+  text-align: center;
+  display: none;
+  padding: .8rem;
+  border: 20px solid #4682b4; }
+  
+  #infoAlert a {
+    text-decoration: none;
+    font-family: courirer,monospace;
+    color: red;
+    text-shadow: 0px 0px 8px #4682b4;
+    outline: none;
+    animation: key  .1s alternate;
+     }
+     @-webkit-keyframes key
+     {
+     	0%
+     	{
+            transform: translateX(-250px);
+     	}
+     	100%
+     	{
+             transform: translateX(100px);
+     	}
+     }

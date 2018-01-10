@@ -30,8 +30,8 @@ main {
   overflow: hidden;
   z-index: 1; }
   #field .snake-head {
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-image: url("../snake1.png");
     position: absolute;
    
@@ -39,8 +39,8 @@ main {
     background-color:#4682b4;
     z-index: 1; }
   #field .snake-tail {
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: #1976D2;
     position: absolute;
     border:20px;
@@ -48,8 +48,8 @@ main {
  
     background-color: #fff; }
   #field .food {
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 1rem;
+    height: 1rem;
     background-color: #1976D2;
     border-radius: 2px;
     position: absolute;

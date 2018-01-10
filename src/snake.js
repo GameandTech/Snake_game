@@ -51,7 +51,7 @@ function createSnake() {
     //Create the tail parts    
     var amountOfPartsByDefault = 8;
 
-    for (var z = 2; z < amountOfPartsByDefault; z++) {
+    for (var z = 0; z < amountOfPartsByDefault; z++) {
         var snake_tail = $('<div></div>', {
             "class": "snake-tail"
         });
@@ -65,7 +65,7 @@ function createSnake() {
 
 function stimulateSnake() {
     //set the snake onto the field
-    for (var z = 2; z < snake.length; z++) {
+    for (var z = 0; z < snake.length; z++) {
         var part = snake[z];
 
         $('#field').append(part);
@@ -250,7 +250,7 @@ function checkNewPosition() {
     }
     
     //check if head is over a part of the tail
-    for (var z = 1; z < snake.length; z++) {
+    for (var z = 1; z <=snake.length; z++) {
         var part = snake[z];
         if (head.position().top === part.position().top && head.position().left === part.position().left) {
             showInfoAlert('<h4>Game over!</h4><br/>Highscore: ' + snake.length + '<br/><br/><a href="#" onclick="location.reload();" onkeydown="javascript: if(event.keyCode == 13) location.reload();">Start new game!</a>');

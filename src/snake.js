@@ -14,7 +14,7 @@ var itemWidth = null;
 var itemHeight = null;
 
 $(function () {    
-    var fieldSize = 25;    
+    var fieldSize = 32;    
     //calculate the field width and height which is depending on the monitor resolution and the items
     var width = (Math.round($(document).width() / fieldSize) * fieldSize) - fieldSize;
     var height = (Math.round($(document).height() / fieldSize) * fieldSize) - fieldSize;

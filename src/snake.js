@@ -49,7 +49,7 @@ function createSnake() {
     array_snake_parts.push(snake_head);        
     
     //Create the tail parts    
-    var amountOfPartsByDefault = 2;
+    var amountOfPartsByDefault = 1;
 
     for (var z = 0; z < amountOfPartsByDefault; z++) {
         var snake_tail = $('<div></div>', {

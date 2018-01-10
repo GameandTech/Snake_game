@@ -14,7 +14,7 @@ var itemWidth = null;
 var itemHeight = null;
 
 $(function () {    
-    var fieldSize = 32;    
+    var fieldSize = 25;    
     //calculate the field width and height which is depending on the monitor resolution and the items
     var width = (Math.round($(document).width() / fieldSize) * fieldSize) - fieldSize;
     var height = (Math.round($(document).height() / fieldSize) * fieldSize) - fieldSize;
@@ -250,7 +250,7 @@ function checkNewPosition() {
     }
     
     //check if head is over a part of the tail
-    for (var z = 1; z <=snake.length; z++) {
+    for (var z = 1; z <snake.length; z++) {
         var part = snake[z];
         if (head.position().top === part.position().top && head.position().left === part.position().left) {
             showInfoAlert('<h4>Game over!</h4><br/>Highscore: ' + snake.length + '<br/><br/><a href="#" onclick="location.reload();" onkeydown="javascript: if(event.keyCode == 13) location.reload();">Start new game!</a>');
